@@ -227,20 +227,62 @@ input[type=button] {
   clear: both;
 }
 
-header {
+main {
   overflow: hidden;
   background-color: black;
 }
 
-header .bg {
+main .bg {
   width: 100%;
   height: 100vh;
   background-image: url("../images/stevie-bg.png");
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
+  position: relative;
   background-size: cover;
   animation-name: bg-scale;
   animation-duration: 2.5s;
+}
+
+main .bg .title {
+  height: 140px;
+  width: 100%;
+  background-image: url("../images/cooldaddio.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 10%;
+  margin-top: -70px;
+}
+
+main .bg .title .second-youth {
+  height: 65px;
+  width: 100%;
+  background-image: url("../images/second-youth.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 110%;
+}
+
+main .bg img {
+  position: absolute;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+main .bg img:hover {
+  -webkit-box-shadow: inset 0px 0px 5px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px 0px 5px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px 0px 5px 4px rgba(0, 0, 0, 0.75);
+}
+
+main .bg .support {
+  top: 50%;
+  left: 18%;
+  width: 316px;
 }
 
 @keyframes bg-scale {

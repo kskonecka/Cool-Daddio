@@ -7,7 +7,7 @@ main {
     background-image: url("../images/stevie-bg.png");
     background-position: top center; //do you want his shoes to show? center center
     background-repeat: no-repeat;
-    // background-attachment: fixed; //optional
+    background-attachment: fixed; //optional
     position: relative;
     background-size: cover;
     animation-name: bg-scale;
@@ -45,10 +45,86 @@ main {
         box-shadow: inset 0px 0px 5px 4px rgba(0,0,0,0.75);
       }
     }
-    .support {
+    .a-support {
+      animation-name: menu;
+      animation-duration: 3s;
+      transition: 0.3s;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      font-family: 'bebas_neuebold';
+      font-size: 2.2rem;
+      letter-spacing: 3px;
+      line-height: 40px;
+      display: block;
+      width: 340px;
+      border-radius: 3px;
+      // height: 40px;
+      position: absolute;
       top: 50%;
-      left:18%; //w mobile zmienic zeby po srodku bylo
-      width: 316px;
+      left:16%; //w mobile zmienic zeby po srodku bylo
+      background-color: rgba(70, 87, 190, 0.7);
+      // border: 1px solid red;
+      &:hover {
+        background-color: darken($background-color-links, 30%);
+      }
+    }
+    .a-watch-trailer {
+      animation-name: menu;
+      animation-duration: 3s;
+      transition: 0.3s;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      font-family: 'bebas_neuebold';
+      font-size: 2.2rem;
+      letter-spacing: 3px;
+      line-height: 40px;
+      display: block;
+      width: 300px;
+      border-radius: 3px;
+      // height: 40px;
+      position: absolute;
+      top: 60%;
+      left:12%; //w mobile zmienic zeby po srodku bylo
+      background-color: $background-color-links;
+      // border: 1px solid red;
+      &:hover {
+        background-color: darken($background-color-links, 30%);
+      }
+    }
+    .menu {
+      font-family: 'bebas_neue_regularregular';
+      position: absolute;
+      bottom: 5%;
+      left:10%;
+      right:10%;
+      max-width: 1060px;
+      margin: 0 auto;
+      // border: 1px solid red;
+      animation-name: menu;
+      animation-duration: 3s;
+      ul {
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        // border: 1px solid red;
+        a {
+          text-decoration: none;
+          li {
+            display: inline;
+            padding: 20px;
+            color: white;
+            font-size: 2rem;
+            transition: 0.3s;
+            &:hover {
+              background-color: $background-color-links;
+
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -66,4 +142,15 @@ main {
     -o-transform: scale(1);
     transform: scale(1);
   opacity: 1;}
+}
+@keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

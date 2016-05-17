@@ -1,5 +1,7 @@
 $(function(){
 
+
+
   function watchTrailer() {
     var trailerLink = $('.a-watch-trailer');
 
@@ -9,7 +11,7 @@ $(function(){
       var trailer = $('<iframe>'); //create iFrame
       var fullScreen = $('<div>'); // create div that contains trailer
 
-      fullScreen.addClass('fullScreen').fadeIn('slow').appendTo($('section'));//add fullScreen class and attach to <body>
+      fullScreen.addClass('fullScreen').fadeIn('slow').appendTo($('.trailer-screen'));//add fullScreen class and attach to <body>
       trailer.attr('src', trailerUrl).appendTo(fullScreen);//add img src and attach to <fullScreen>
 
       $('body').on('click', '.fullScreen', function(){ //exits full screen
@@ -19,4 +21,20 @@ $(function(){
   }
 
 watchTrailer();
+
+function scrollMenu(){
+    var menuLinks = $(".menu").find("a");
+    // console.log(menuLinks);
+
+    menuLinks.on("click", function(){
+      event.preventDefault();
+      var menuLinksHref = $(this).attr('href');
+      console.log(menuLinksHref);
+
+      $("html, body").animate({
+        scrollTop: $(menuLinksHref).offset().top
+      },1000);
+    });
+  }
+  scrollMenu();
 });

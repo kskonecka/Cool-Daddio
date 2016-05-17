@@ -7,7 +7,9 @@ body {
 }
 //awesome hack
 // http://stackoverflow.com/questions/3296644/hiding-the-scrollbar-on-an-html-page
-
+.main-width {
+  max-width: 1060px;
+}
 //grid
 .row::after {
     content: "";

@@ -267,6 +267,10 @@ body {
   font-size: 10px;
 }
 
+.main-width {
+  max-width: 1060px;
+}
+
 .row::after {
   content: "";
   clear: both;
@@ -327,25 +331,25 @@ body {
   width: 100%;
 }
 
-main {
+#main {
   overflow: hidden;
   background-color: black;
+  clear: both;
 }
 
-main .bg {
+#main .bg {
   width: 100%;
   height: 100vh;
   background-image: url("../images/stevie-bg.png");
   background-position: top center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative;
   background-size: cover;
   animation-name: bg-scale;
   animation-duration: 2.5s;
 }
 
-main .bg .title {
+#main .bg .title {
   height: 140px;
   width: 100%;
   background-image: url("../images/cooldaddio.png");
@@ -357,7 +361,7 @@ main .bg .title {
   margin-top: -70px;
 }
 
-main .bg .title .second-youth {
+#main .bg .title .second-youth {
   height: 65px;
   width: 100%;
   background-image: url("../images/second-youth.png");
@@ -368,19 +372,19 @@ main .bg .title .second-youth {
   top: 110%;
 }
 
-main .bg img {
+#main .bg img {
   position: absolute;
   cursor: pointer;
   transition: 0.2s;
 }
 
-main .bg img:hover {
+#main .bg img:hover {
   -webkit-box-shadow: inset 0px 0px 5px 4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset 0px 0px 5px 4px rgba(0, 0, 0, 0.75);
   box-shadow: inset 0px 0px 5px 4px rgba(0, 0, 0, 0.75);
 }
 
-main .bg .a-support {
+#main .bg .a-support {
   animation-name: menu;
   animation-duration: 3s;
   transition: 0.3s;
@@ -400,11 +404,11 @@ main .bg .a-support {
   background-color: rgba(70, 87, 190, 0.7);
 }
 
-main .bg .a-support:hover {
+#main .bg .a-support:hover {
   background-color: rgba(28, 35, 79, 0.7);
 }
 
-main .bg .a-watch-trailer {
+#main .bg .a-watch-trailer {
   animation-name: menu;
   animation-duration: 3s;
   transition: 0.3s;
@@ -424,11 +428,11 @@ main .bg .a-watch-trailer {
   background-color: rgba(70, 87, 190, 0.7);
 }
 
-main .bg .a-watch-trailer:hover {
+#main .bg .a-watch-trailer:hover {
   background-color: rgba(28, 35, 79, 0.7);
 }
 
-main .bg .menu {
+#main .bg .menu {
   font-family: 'bebas_neue_regularregular';
   position: absolute;
   bottom: 5%;
@@ -440,18 +444,18 @@ main .bg .menu {
   animation-duration: 3s;
 }
 
-main .bg .menu ul {
+#main .bg .menu ul {
   padding: 15px 0;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
 }
 
-main .bg .menu ul a {
+#main .bg .menu ul a {
   text-decoration: none;
 }
 
-main .bg .menu ul a li {
+#main .bg .menu ul a li {
   display: inline;
   padding: 20px;
   color: white;
@@ -459,7 +463,7 @@ main .bg .menu ul a li {
   transition: 0.3s;
 }
 
-main .bg .menu ul a li:hover {
+#main .bg .menu ul a li:hover {
   background-color: rgba(70, 87, 190, 0.7);
 }
 
@@ -494,23 +498,113 @@ main .bg .menu ul a li:hover {
   }
 }
 
-.content {
-  margin-bottom: 400px;
-  border: 1px solid pink;
-}
-
-.content article {
-  font-family: sans-serif;
-  font-size: 1.5rem;
-  max-width: 1060px;
-  margin: 100px auto;
-  text-align: justify;
-  border: 1px solid pink;
+#about {
+  width: 100%;
+  height: 100vh;
   background-image: url("../images/about.png");
-  background-position: center center;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.content article .about-text {
-  z-index: 3;
+#about .about-text {
+  color: white;
+  margin: 0 auto;
+  text-align: justify;
+  border: none;
+  background: none;
+  transition: 0.5s;
+}
+
+#about .about-text:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#about .about-text h3 {
+  font-size: 3rem;
+  font-family: "NTR";
+}
+
+#about .about-text p {
+  font-family: "NTR";
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+#who-is-he {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#who-is-he .who-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#who-is-he .who-content .who-text {
+  width: 62%;
+  max-height: 80%;
+  color: white;
+}
+
+#who-is-he .who-content .who-text span {
+  font-size: 3rem;
+  font-family: "NTR";
+}
+
+#who-is-he .who-content .who-text p {
+  font-family: "NTR";
+  font-size: 1rem;
+  line-height: 1.6rem;
+  overflow: scroll;
+}
+
+#who-is-he .who-content .fixed-slider {
+  width: 245px;
+  height: 600px;
+  background-image: url("../images/collage-min.png");
+  background-size: 240px;
+  background-attachment: fixed;
+}
+
+#news {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#news .news-content {
+  margin: 0 auto;
+}
+
+#news .news-content .news-text {
+  height: 80%;
+  color: white;
+}
+
+#news .news-content .news-text span {
+  font-size: 3rem;
+  font-family: "NTR";
+}
+
+#news .news-content .news-text p {
+  font-family: "NTR";
+  font-size: 1.5rem;
+  line-height: 1.6rem;
 }

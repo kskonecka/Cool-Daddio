@@ -2,6 +2,7 @@
 // body::-webkit-scrollbar {
 //     display: none;
 // }
+
 body {
   font-size: 10px;
 }
@@ -19,7 +20,7 @@ body {
 [class*="col-"] {
     float: left;
     padding: 15px;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}

@@ -263,6 +263,36 @@ input[type=button] {
   z-index: 12;
 }
 
+.invisible {
+  display: none;
+}
+
+.sup-div {
+  display: block;
+  max-width: 900px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  margin-top: -250px;
+  z-index: 12;
+  background: #1b1b1b;
+}
+
+.sup-div span {
+  color: white;
+  font-family: "NTR";
+  font-size: 2.5rem;
+  padding: 20px;
+}
+
+.sup-div p {
+  color: white;
+  font-family: "NTR";
+  font-size: 1.2rem;
+  padding: 20px;
+}
+
 body {
   font-size: 10px;
 }
@@ -280,7 +310,6 @@ body {
 [class*="col-"] {
   float: left;
   padding: 15px;
-  border: 1px solid red;
 }
 
 .col-1 {
@@ -345,8 +374,6 @@ body {
   background-repeat: no-repeat;
   position: relative;
   background-size: cover;
-  animation-name: bg-scale;
-  animation-duration: 2.5s;
 }
 
 #main .bg .title {
@@ -385,8 +412,6 @@ body {
 }
 
 #main .bg .a-support {
-  animation-name: menu;
-  animation-duration: 3s;
   transition: 0.3s;
   text-decoration: none;
   color: white;
@@ -409,8 +434,6 @@ body {
 }
 
 #main .bg .a-watch-trailer {
-  animation-name: menu;
-  animation-duration: 3s;
   transition: 0.3s;
   text-decoration: none;
   color: white;
@@ -440,8 +463,6 @@ body {
   right: 10%;
   max-width: 1060px;
   margin: 0 auto;
-  animation-name: menu;
-  animation-duration: 3s;
 }
 
 #main .bg .menu ul {
@@ -539,7 +560,7 @@ body {
 #who-is-he {
   width: 100%;
   height: 100vh;
-  background-color: black;
+  background-color: #1b1b1b;
   position: relative;
   display: flex;
   justify-content: center;
@@ -554,9 +575,11 @@ body {
 }
 
 #who-is-he .who-content .who-text {
-  width: 62%;
-  max-height: 80%;
+  padding: 10px;
+  width: 68%;
+  max-height: 80vh;
   color: white;
+  overflow: scroll;
 }
 
 #who-is-he .who-content .who-text span {
@@ -566,9 +589,26 @@ body {
 
 #who-is-he .who-content .who-text p {
   font-family: "NTR";
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6rem;
-  overflow: scroll;
+}
+
+#who-is-he .who-content .who-text::-webkit-scrollbar {
+  width: 10px;
+}
+
+#who-is-he .who-content .who-text::-webkit-scrollbar:horizontal {
+  display: none;
+}
+
+#who-is-he .who-content .who-text::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+#who-is-he .who-content .who-text::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
 }
 
 #who-is-he .who-content .fixed-slider {
@@ -579,10 +619,65 @@ body {
   background-attachment: fixed;
 }
 
+#gallery {
+  width: 100%;
+  height: 100vh;
+  background-color: #1b1b1b;
+  position: relative;
+}
+
+#gallery .main-width {
+  margin: 0 auto;
+  color: white;
+  padding: 15px;
+}
+
+#gallery .main-width span {
+  display: block;
+  padding-top: 20px;
+  font-size: 3rem;
+  font-family: "NTR";
+}
+
+#gallery .main-width p {
+  font-family: "NTR";
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  padding-bottom: 10px;
+}
+
+#gallery .main-width .scroll-gallery {
+  overflow: scroll;
+  max-height: 60vh;
+}
+
+#gallery .main-width .scroll-gallery img {
+  display: block;
+  margin: auto;
+}
+
+#gallery .main-width .scroll-gallery::-webkit-scrollbar {
+  width: 10px;
+}
+
+#gallery .main-width .scroll-gallery::-webkit-scrollbar:horizontal {
+  display: none;
+}
+
+#gallery .main-width .scroll-gallery::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 20px;
+}
+
+#gallery .main-width .scroll-gallery::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 20px;
+}
+
 #news {
   width: 100%;
   height: 100vh;
-  background-color: black;
+  background-color: #1b1b1b;
   display: flex;
   justify-content: center;
   align-items: center;

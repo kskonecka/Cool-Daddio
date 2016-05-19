@@ -19,3 +19,29 @@
       z-index: 12;
     }
   }
+.invisible {
+  display: none;
+}
+.sup-div {
+  display: block;
+  max-width: 900px; //change in media queries
+  height: 500px; //change in media queries
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  margin-top: -250px;
+  z-index: 12;
+  background: #1b1b1b;
+  span {
+    color: white;
+    font-family: "NTR";
+    font-size: 2.5rem;
+    padding: 20px;
+  }
+  p {
+    color: white;
+    font-family: "NTR";
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+}

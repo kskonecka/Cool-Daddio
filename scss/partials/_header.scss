@@ -11,8 +11,8 @@
     // background-attachment: fixed; //optional
     position: relative;
     background-size: cover;
-    animation-name: bg-scale;
-    animation-duration: 2.5s;
+    // animation-name: bg-scale;
+    // animation-duration: 2.5s;
     .title {
       height: 140px;
       width: 100%;
@@ -47,8 +47,8 @@
       }
     }
     .a-support {
-      animation-name: menu;
-      animation-duration: 3s;
+      // animation-name: menu;
+      // animation-duration: 3s;
       transition: 0.3s;
       text-decoration: none;
       color: white;
@@ -71,8 +71,8 @@
       }
     }
     .a-watch-trailer {
-      animation-name: menu;
-      animation-duration: 3s;
+      // animation-name: menu;
+      // animation-duration: 3s;
       transition: 0.3s;
       text-decoration: none;
       color: white;
@@ -103,8 +103,8 @@
       max-width: 1060px;
       margin: 0 auto;
       // border: 1px solid red;
-      animation-name: menu;
-      animation-duration: 3s;
+      // animation-name: menu;
+      // animation-duration: 3s;
       ul {
         padding: 15px 0;
         display: flex;

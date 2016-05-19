@@ -1,0 +1,16 @@
+@mixin scroll($element) {
+  $element::-webkit-scrollbar {
+    width: 10px;
+    &:horizontal {
+      display: none;
+    }
+  }
+  $element::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 20px;
+  }
+  $element::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 20px;
+  }
+}
